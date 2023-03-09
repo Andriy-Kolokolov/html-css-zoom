@@ -5,7 +5,7 @@
 }
 
 :root {
-    --icon-nav-size: 30px;
+    --icon-nav-size: 25px;
 }
 
 body {
@@ -15,7 +15,32 @@ body {
     overflow-y: visible;
 }
 
+.speaker-view-panel {
+    color: white;
+    position: absolute;
+    top: .5rem;
+    right: 2rem;
+    display: flex;
+    gap: 10px;
+}
+
+.speaker-view-panel .x {
+    background-color: grey;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.speaker-view {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: grey;
+    border-radius: 3px;
+    padding: 3px;
+}
+
 .members-view {
+    position: relative;
     padding: 3rem 2rem;
     margin-bottom: 20vh;
     display: flex;
@@ -36,7 +61,7 @@ body {
     gap: 5px;
     padding: 3px;
     position: absolute;
-    bottom: 4px;
+    bottom: 2rem;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 17px;
@@ -55,32 +80,53 @@ body {
     background-color: #222222;
 }
 
-.nav-menu i{
+.nav-menu i {
     font-size: var(--icon-nav-size);
     color: white;
 }
 
-.nav-menu .side.left {
+.nav-menu .side * {
+    cursor: pointer;
+    margin: 3px;
+}
+
+.nav-menu .side {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
-.side.left .mic{
+.side.left .mic {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
 }
 
-.side.left .vid{
+.side.left .vid {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+}
+
+.middle div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side.right .end-meeting {
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+.side.right .end-meeting:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 
