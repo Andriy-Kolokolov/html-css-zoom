@@ -3,3 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.members-view {
+    padding: 3rem 2rem;
+    margin-bottom: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+
+.nav-menu {
+    background-color: #222222;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
